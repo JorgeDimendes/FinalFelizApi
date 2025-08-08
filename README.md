@@ -4,6 +4,14 @@
 A proposta é conectar clientes a massagistas de forma prática e profissional, com suporte a perfis personalizados, 
 serviços premium e múltiplas formas de pagamento.
 
+---
+
+## 🎯 Objetivo
+Este projeto foi criado com fins educativos e para demonstrar domínio em criação de APIs RESTful com C#. 
+A ideia é simular uma plataforma profissional de massagens com recursos completos e uma estrutura limpa, reutilizável e escalável.
+
+---
+
 ## ✨ Funcionalidades
 
 - ✅ Cadastro e autenticação de **massagistas**
@@ -17,6 +25,8 @@ serviços premium e múltiplas formas de pagamento.
 - ✅ Agendamento de sessões
 - ✅ Busca de massagistas por **cidade e estado**
 
+---
+
 ## 🧱 Tecnologias Utilizadas
 
 - ASP.NET Core 8
@@ -24,6 +34,25 @@ serviços premium e múltiplas formas de pagamento.
 - SQLite (ou outro banco relacional)
 - AutoMapper (para mapeamento de DTOs)
 - Swagger (documentação automática)
+
+---
+
+## 📷 Prints
+Em breve
+
+---
+
+## 📘 Status do Projeto
+Em andamento
+
+---
+
+## ✍️ Autor
+- 👨🏾‍💻 Jorge Menezes
+- 📧 jorgedimendes@hotmail.com
+- 🐙 [github.com/jorgedimendes](https://github.com/JorgeDimendes)
+
+---
 
 ## 🚀 Como Executar
 1. Clone o repositório:
@@ -51,12 +80,3 @@ dotnet run
 ```
 https://localhost:{porta}/swagger
 ```
-
-## 🎯 Objetivo
-Este projeto foi criado com fins educativos e para demonstrar domínio em criação de APIs RESTful com C#. 
-A ideia é simular uma plataforma profissional de massagens com recursos completos e uma estrutura limpa, reutilizável e escalável.
-
-## ✍️ Autor
-- 👨🏾‍💻 Jorge Menezes
-- 📧 jorgedimendes@hotmail.com
-- 🐙 [github.com/jorgedimendes](https://github.com/JorgeDimendes)
