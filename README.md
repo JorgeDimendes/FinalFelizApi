@@ -1,6 +1,6 @@
-# 💆‍♂️ FinalFelizApi
+# 💆‍♂️ MassagemPlusApi
 
-**FinalFelizApi** é uma Web API desenvolvida em **C# com ASP.NET Core**, focada na gestão de agendamentos de massagens. 
+**MassagemPlusApi** é uma Web API desenvolvida em **C# com ASP.NET Core**, focada na gestão de agendamentos de massagens. 
 A proposta é conectar clientes a massagistas de forma prática e profissional, com suporte a perfis personalizados, 
 serviços premium e múltiplas formas de pagamento.
 
