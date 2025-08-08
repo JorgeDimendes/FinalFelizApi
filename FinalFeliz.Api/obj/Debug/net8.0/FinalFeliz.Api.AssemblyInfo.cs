@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FinalFeliz.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ee2a1ad577bac14295f07f55b6fc48c08cbbdc2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb0e1f662398a691ad4566c6a5495a4f7726521f")]
 [assembly: System.Reflection.AssemblyProductAttribute("FinalFeliz.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FinalFeliz.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -14,4 +14,24 @@ public class AppDbContext : DbContext
     public DbSet<ServicoPremium> ServicosPremium { get; set; }
     public DbSet<MassagemComum> MassagensComum { get; set; }
     public DbSet<FotoLocal> FotosLocal { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+        
+        modelBuilder.Entity<Massagista>()
+            .HasMany(m => m.ServicosPremium)
+            .WithOne(s => s.Massagista)
+            .HasForeignKey(s => s.MassagistaId);
+        
+        modelBuilder.Entity<Massagista>()
+            .HasMany(m => m.MassagensComum)
+            .WithOne(s => s.Massagista)
+            .HasForeignKey(s => s.MassagistaId);
+        
+        modelBuilder.Entity<Massagista>()
+            .HasMany(m => m.FotosLocal)
+            .WithOne(s => s.Massagista)
+            .HasForeignKey(s => s.MassagistaId);
+    }
 }
