@@ -57,7 +57,7 @@ Em andamento
 ## 🚀 Como Executar
 1. Clone o repositório:
 ```
-git clone https://github.com/JorgeDimendes/FinalFelizApi.git
+git clone https://github.com/JorgeDimendes/MassagemPlusApi.git
 ```
 
 2. Acesse a pasta do projeto:
