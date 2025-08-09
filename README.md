@@ -56,7 +56,7 @@ git clone https://github.com/JorgeDimendes/MassagemPlusApi.git
 
 2. Acesse a pasta do projeto:
 ```
-cd FinalFelizApi
+cd MassagemPlusApi
 ```
 
 3. Restaure os pacotes e rode as migrações:
