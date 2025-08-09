@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0KTVcM9QKto=",
+  "dgSpecHash": "1jHxiKBx+jI=",
   "success": true,
-  "projectFilePath": "/home/gutssama/Documentos/Web Api C#/MinhasApis/FinalFelizApi/MassagemPlus.Api/MassagemPlus.Api.csproj",
+  "projectFilePath": "/home/gutssama/Documentos/Web Api C#/MinhasApis/MassagemPlusApi/MassagemPlus.Api/MassagemPlus.Api.csproj",
   "expectedPackageFiles": [
     "/home/gutssama/.nuget/packages/humanizer/2.14.1/humanizer.2.14.1.nupkg.sha512",
     "/home/gutssama/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",

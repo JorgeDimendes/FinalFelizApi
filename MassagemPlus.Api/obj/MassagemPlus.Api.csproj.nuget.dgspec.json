@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/gutssama/Documentos/Web Api C#/MinhasApis/FinalFelizApi/MassagemPlus.Api/MassagemPlus.Api.csproj": {}
+    "/home/gutssama/Documentos/Web Api C#/MinhasApis/MassagemPlusApi/MassagemPlus.Api/MassagemPlus.Api.csproj": {}
   },
   "projects": {
-    "/home/gutssama/Documentos/Web Api C#/MinhasApis/FinalFelizApi/MassagemPlus.Api/MassagemPlus.Api.csproj": {
+    "/home/gutssama/Documentos/Web Api C#/MinhasApis/MassagemPlusApi/MassagemPlus.Api/MassagemPlus.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/gutssama/Documentos/Web Api C#/MinhasApis/FinalFelizApi/MassagemPlus.Api/MassagemPlus.Api.csproj",
+        "projectUniqueName": "/home/gutssama/Documentos/Web Api C#/MinhasApis/MassagemPlusApi/MassagemPlus.Api/MassagemPlus.Api.csproj",
         "projectName": "MassagemPlus.Api",
-        "projectPath": "/home/gutssama/Documentos/Web Api C#/MinhasApis/FinalFelizApi/MassagemPlus.Api/MassagemPlus.Api.csproj",
+        "projectPath": "/home/gutssama/Documentos/Web Api C#/MinhasApis/MassagemPlusApi/MassagemPlus.Api/MassagemPlus.Api.csproj",
         "packagesPath": "/home/gutssama/.nuget/packages/",
-        "outputPath": "/home/gutssama/Documentos/Web Api C#/MinhasApis/FinalFelizApi/MassagemPlus.Api/obj/",
+        "outputPath": "/home/gutssama/Documentos/Web Api C#/MinhasApis/MassagemPlusApi/MassagemPlus.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/gutssama/.nuget/NuGet/NuGet.Config"
