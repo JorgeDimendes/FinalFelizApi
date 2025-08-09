@@ -1,4 +1,5 @@
 using MassagemPlus.Api.Data;
+using MassagemPlus.Api.DTO.Massagista;
 using MassagemPlus.Api.Models;
 using MassagemPlus.Api.Repository;
 using MassagemPlus.Api.Repository.Interfaces;
@@ -18,17 +19,44 @@ namespace MassagemPlus.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Massagista>>> Get()
+        public async Task<ActionResult<IEnumerable<MassagistaListarDTO>>> Get()
         {
             var massagistas = await _RepoMassagista.GetAll();
-            return Ok(massagistas);
+            if (massagistas == null)
+            {
+                return NotFound("Erro ao listar massagistas");
+            }
+            
+            //Mapear manualmente para DTO
+            var massagistasDTO = massagistas.Select(m => new MassagistaListarDTO
+            {
+                Nome = m.Nome,
+                FotoPerfil = m.FotoPerfil,
+                Descricao = m.Descricao
+            });
+            
+            return Ok(massagistasDTO);
         }
 
         [HttpPost]
-        public async Task<ActionResult<Massagista>> Post([FromBody] Massagista massagista)
+        public async Task<ActionResult<MassagistaCadastroDTO>> Post([FromBody] MassagistaCadastroDTO massagistaDto)
         {
-            var massagistaCriado = await _RepoMassagista.Post(massagista);
-            return Ok(massagistaCriado);
+            if (massagistaDto == null)
+            {
+                return BadRequest("Erro ao cadastrar massagista");
+            }
+            
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var massagistaCriado = new Massagista
+            {
+                Email = massagistaDto.Email,
+                Nome = massagistaDto.Nome,
+                SenhaHash = massagistaDto.SenhaHash
+            };
+            var massagistaCriadoDTO = await _RepoMassagista.Post(massagistaCriado);
+            return Ok(massagistaCriadoDTO);
         }
     }
 }
