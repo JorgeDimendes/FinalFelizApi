@@ -8,7 +8,7 @@ public class ServicoPremium
     public string Descricao { get; set; } = null!;
     public decimal Preco { get; set; }
     
-    public int MassagistaId { get; set; }
+    public int? MassagistaId { get; set; }
     [JsonIgnore]
-    public Massagista Massagista { get; set; }
+    public Massagista? Massagista { get; set; }
 }

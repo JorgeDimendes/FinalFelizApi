@@ -8,7 +8,7 @@ public class MassagemComum
     public TimeSpan DuracaoMassagem { get; set; }
     public decimal Preco { get; set; }
 
-    public int MassagistaId { get; set; }
+    public int? MassagistaId { get; set; }
     [JsonIgnore]
-    public Massagista Massagista { get; set; } = null!;
+    public Massagista? Massagista { get; set; }
 }

@@ -17,8 +17,8 @@ public class Massagista
     public string Estado { get; set; }  = null!;
     public string Endereco { get; set; } = string.Empty;
     
-    public List<FormasPagamento> FormasPagamentos{ get; set; }
-    public ICollection<MassagemComum> MassagensComum { get; set; }
+    public List<FormasPagamento>? FormasPagamentos{ get; set; }
+    public ICollection<MassagemComum>? MassagensComum { get; set; }
     public ICollection<FotoLocal>? FotosLocal { get; set; }
     public ICollection<ServicoPremium>? ServicosPremium { get; set; }
 }
