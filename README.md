@@ -6,12 +6,6 @@ serviços premium e múltiplas formas de pagamento.
 
 ---
 
-## 🎯 Objetivo
-Este projeto foi criado com fins educativos e para demonstrar domínio em criação de APIs RESTful com C#. 
-A ideia é simular uma plataforma profissional de massagens com recursos completos e uma estrutura limpa, reutilizável e escalável.
-
----
-
 ## ✨ Funcionalidades
 
 - ✅ Cadastro e autenticação de **massagistas**
