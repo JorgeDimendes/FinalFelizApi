@@ -5,6 +5,7 @@ namespace MassagemPlus.Api.DTO.Massagista;
 
 public class MassagistaAtualizarDTO
 {
+    public int Id { get; set; }
     public string Email { get; set; }
     public string SenhaHash { get; set; }
     public string Nome { get; set; } = null!;

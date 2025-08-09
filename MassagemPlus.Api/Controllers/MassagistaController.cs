@@ -62,7 +62,19 @@ namespace MassagemPlus.Api.Controllers
             
             return Ok(massagistaCriadoDTO);
         }
-        
-        
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult> Put(int id, MassagistaAtualizarDTO massagista)
+        {
+            if (id != massagista.Id)
+            {
+                return BadRequest("Erro ao localizar massagista");
+            }
+            
+            var massagistaDto = massagista.MapearParaModelAtualizacao();
+
+            var atualizado = await _RepoMassagista.Put(massagistaDto);
+            return Ok(atualizado);
+        }
     }
 }

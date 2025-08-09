@@ -38,6 +38,7 @@ public static class MappgingMassagistaDTO
         //DTO -> Model
         return new Models.Massagista
         {
+            Id = massagistaDto.Id,
             Email =  massagistaDto.Email,
             SenhaHash = massagistaDto.SenhaHash,
             Nome = massagistaDto.Nome,
