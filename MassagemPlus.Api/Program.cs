@@ -1,4 +1,6 @@
 using MassagemPlus.Api.Data;
+using MassagemPlus.Api.Repository;
+using MassagemPlus.Api.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +13,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(
     context => context.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
+
+//Repositorys
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
 var app = builder.Build();
 
