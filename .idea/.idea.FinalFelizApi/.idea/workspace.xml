@@ -9,17 +9,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb6c96bf-58f1-40a1-86a9-1cf39dbeb57e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/FinalFeliz.Api/Controllers/MassagistaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FinalFeliz.Api/Controllers/MassagistaController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalFeliz.Api/Data/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FinalFeliz.Api/Data/AppDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalFeliz.Api/bin/Debug/net8.0/FinalFeliz.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FinalFeliz.Api/bin/Debug/net8.0/FinalFeliz.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalFeliz.Api/bin/Debug/net8.0/FinalFeliz.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FinalFeliz.Api/bin/Debug/net8.0/FinalFeliz.Api.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalFeliz.Api/obj/Debug/net8.0/FinalFeliz.Api.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FinalFeliz.Api/obj/Debug/net8.0/FinalFeliz.Api.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalFeliz.Api/obj/Debug/net8.0/FinalFeliz.Api.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FinalFeliz.Api/obj/Debug/net8.0/FinalFeliz.Api.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalFeliz.Api/obj/Debug/net8.0/FinalFeliz.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FinalFeliz.Api/obj/Debug/net8.0/FinalFeliz.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalFeliz.Api/obj/Debug/net8.0/FinalFeliz.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FinalFeliz.Api/obj/Debug/net8.0/FinalFeliz.Api.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalFeliz.Api/obj/Debug/net8.0/FinalFeliz.Api.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/FinalFeliz.Api/obj/Debug/net8.0/FinalFeliz.Api.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalFeliz.Api/obj/Debug/net8.0/ref/FinalFeliz.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FinalFeliz.Api/obj/Debug/net8.0/ref/FinalFeliz.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalFeliz.Api/obj/Debug/net8.0/refint/FinalFeliz.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FinalFeliz.Api/obj/Debug/net8.0/refint/FinalFeliz.Api.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MassagemPlus.Api/Repository/Interfaces/IRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MassagemPlus.Api/Repository/Repository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MassagemPlus.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MassagemPlus.Api/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MassagemPlus.Api/bin/Debug/net8.0/MassagemPlus.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MassagemPlus.Api/bin/Debug/net8.0/MassagemPlus.Api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MassagemPlus.Api/bin/Debug/net8.0/MassagemPlus.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MassagemPlus.Api/bin/Debug/net8.0/MassagemPlus.Api.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MassagemPlus.Api/obj/Debug/net8.0/MassagemPlus.Api.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MassagemPlus.Api/obj/Debug/net8.0/MassagemPlus.Api.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MassagemPlus.Api/obj/Debug/net8.0/MassagemPlus.Api.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MassagemPlus.Api/obj/Debug/net8.0/MassagemPlus.Api.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MassagemPlus.Api/obj/Debug/net8.0/apphost" beforeDir="false" afterPath="$PROJECT_DIR$/MassagemPlus.Api/obj/Debug/net8.0/apphost" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MassagemPlus.Api/obj/Debug/net8.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/MassagemPlus.Api/obj/Debug/net8.0/staticwebassets.build.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,21 +58,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.FinalFeliz.Api: http.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/gutssama/Documentos/Web Api C#/MinhasApis/FinalFelizApi&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.FinalFeliz.Api: http.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/gutssama/Documentos/Web Api C#/MinhasApis/FinalFelizApi",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.FinalFeliz.Api: http">
     <configuration name="FinalFeliz.Api: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/MassagemPlus.Api/MassagemPlus.Api.csproj" />
@@ -115,6 +114,7 @@
       <option name="presentableId" value="Default" />
       <updated>1754636741319</updated>
       <workItem from="1754636742363" duration="9541000" />
+      <workItem from="1754670911381" duration="8897000" />
     </task>
     <task id="LOCAL-00001" summary="Criando Repositorio Github">
       <option name="closed" value="true" />
@@ -148,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754647214508</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Foi criado o MassagistaController e feito um teste usando Get com mensagem de bem-vindo. e melhorado nome do projeto.">
+      <option name="closed" value="true" />
+      <created>1754671132018</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1754671132019</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,7 +170,9 @@
     <MESSAGE value="Foi adicionado os pacotes principais, configurado o sqlite em program, e configurado AppDbContext." />
     <MESSAGE value="Foi adicionado os vinculos relacionados aos massagistas e foi feito a migração do EF." />
     <MESSAGE value="Foi criado o MassagistaController e feito um teste usando Get com mensagem de bem-vindo." />
-    <option name="LAST_COMMIT_MESSAGE" value="Foi criado o MassagistaController e feito um teste usando Get com mensagem de bem-vindo." />
+    <MESSAGE value="Foi criado o MassagistaController e feito um teste usando Get com mensagem de bem-vindo. e melhorado nome do projeto." />
+    <option name="LAST_COMMIT_MESSAGE" value="Foi criado o MassagistaController e feito um teste usando Get com mensagem de bem-vindo. e melhorado nome do projeto." />
+    <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
