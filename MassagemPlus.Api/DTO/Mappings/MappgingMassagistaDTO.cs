@@ -1,4 +1,5 @@
 using MassagemPlus.Api.DTO.Massagista;
+using MassagemPlus.Api.Models;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 
 namespace MassagemPlus.Api.DTO.Mappings;
@@ -32,14 +33,24 @@ public static class MappgingMassagistaDTO
     #endregion
     
     #region Put
-    public static Models.Massagista? MapearParaModelAtualizacao(this MassagistaCadastroDTO massagistaDto)
+    public static Models.Massagista? MapearParaModelAtualizacao(this MassagistaAtualizarDTO massagistaDto)
     {
         //DTO -> Model
         return new Models.Massagista
         {
-            Email = massagistaDto.Email,
+            Email =  massagistaDto.Email,
             SenhaHash = massagistaDto.SenhaHash,
             Nome = massagistaDto.Nome,
+            FotoPerfil = massagistaDto.FotoPerfil,
+            Descricao = massagistaDto.Descricao,
+            Telefone = massagistaDto.Telefone,
+            Cidade = massagistaDto.Cidade,
+            Estado = massagistaDto.Estado,
+            Endereco =  massagistaDto.Endereco,
+            FormasPagamentos =  massagistaDto.FormasPagamentos,
+            MassagensComum = massagistaDto.MassagensComum,
+            FotosLocal =  massagistaDto.FotosLocal,
+            ServicosPremium =  massagistaDto.ServicosPremium
         };
     }
     #endregion

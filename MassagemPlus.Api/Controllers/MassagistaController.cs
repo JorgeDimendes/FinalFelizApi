@@ -62,5 +62,7 @@ namespace MassagemPlus.Api.Controllers
             
             return Ok(massagistaCriadoDTO);
         }
+        
+        
     }
 }

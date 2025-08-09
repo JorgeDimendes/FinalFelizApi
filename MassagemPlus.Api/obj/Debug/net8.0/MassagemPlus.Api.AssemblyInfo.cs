@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MassagemPlus.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+415e0959d19cb545cbea742cd95ba7c206b4e501")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2f3f94a7da8e35fb7c466496043cddf5fe7f9d6")]
 [assembly: System.Reflection.AssemblyProductAttribute("MassagemPlus.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MassagemPlus.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
