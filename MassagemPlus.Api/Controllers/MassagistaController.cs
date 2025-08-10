@@ -1,11 +1,8 @@
-using MassagemPlus.Api.Data;
 using MassagemPlus.Api.DTO.Mappings;
 using MassagemPlus.Api.DTO.Massagista;
 using MassagemPlus.Api.Models;
-using MassagemPlus.Api.Repository;
 using MassagemPlus.Api.Repository.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace MassagemPlus.Api.Controllers
 {
@@ -61,7 +58,7 @@ namespace MassagemPlus.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Massagista>> Post([FromBody] MassagistaCadastroDTO massagista)
+        public async Task<ActionResult<MassagistaCadastroDTO>> Post([FromBody] MassagistaCadastroDTO massagista)
         {
             if (massagista == null)
             {
@@ -77,9 +74,9 @@ namespace MassagemPlus.Api.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult<MassagistaAtualizarDTO>> Put(int id, MassagistaAtualizarDTO massagista)
+        public async Task<ActionResult<MassagistaAtualizarDTO>> Put(int id, MassagistaAtualizarDTO dto)
         {
-            if (id != massagista.Id)
+            if (id != dto.Id)
             {
                 return BadRequest("O ID informado não corresponde ao do objeto enviado.");
             }
@@ -88,9 +85,10 @@ namespace MassagemPlus.Api.Controllers
             if (verificaMassagista == null)
                 return NotFound("Massagista não encontrado");
             
-            var massagistaDto = massagista.MapearParaModelAtualizacao();
+            //var massagistaDto = dto.MapearParaModelAtualizacao();
+            dto.MapearParaModelAtualizacao(verificaMassagista);
 
-            var atualizado = await _RepoMassagista.Put(massagistaDto);
+            var atualizado = await _RepoMassagista.Put(verificaMassagista);
             return Ok(atualizado);
         }
 

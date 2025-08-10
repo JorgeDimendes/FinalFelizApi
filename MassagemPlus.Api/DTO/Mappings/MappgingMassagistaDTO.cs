@@ -33,26 +33,45 @@ public static class MappgingMassagistaDTO
     #endregion
     
     #region Put
-    public static Models.Massagista? MapearParaModelAtualizacao(this MassagistaAtualizarDTO massagistaDto)
+    public static void MapearParaModelAtualizacao(this MassagistaAtualizarDTO dto, Models.Massagista entity)
+    {
+        entity.Id = dto.Id;
+        entity.Email = dto.Email;
+        entity.SenhaHash = dto.SenhaHash;
+        entity.Nome = dto.Nome;
+        entity.FotoPerfil = dto.FotoPerfil;
+        entity.Descricao = dto.Descricao;
+        entity.Telefone = dto.Telefone;
+        entity.Cidade = dto.Cidade;
+        entity.Estado = dto.Estado;
+        entity.Endereco = dto.Endereco;
+        entity.FormasPagamentos = dto.FormasPagamentos;
+        entity.MassagensComum = dto.MassagensComum;
+        entity.FotosLocal = dto.FotosLocal;
+        entity.ServicosPremium = dto.ServicosPremium;
+    }
+    
+    
+    /*public static Models.Massagista? MapearParaModelAtualizacao(this MassagistaAtualizarDTO dto)
     {
         //DTO -> Model
         return new Models.Massagista
         {
-            Id = massagistaDto.Id,
-            Email =  massagistaDto.Email,
-            SenhaHash = massagistaDto.SenhaHash,
-            Nome = massagistaDto.Nome,
-            FotoPerfil = massagistaDto.FotoPerfil,
-            Descricao = massagistaDto.Descricao,
-            Telefone = massagistaDto.Telefone,
-            Cidade = massagistaDto.Cidade,
-            Estado = massagistaDto.Estado,
-            Endereco =  massagistaDto.Endereco,
-            FormasPagamentos =  massagistaDto.FormasPagamentos,
-            MassagensComum = massagistaDto.MassagensComum,
-            FotosLocal =  massagistaDto.FotosLocal,
-            ServicosPremium =  massagistaDto.ServicosPremium
+            Id = dto.Id,
+            Email =  dto.Email,
+            SenhaHash = dto.SenhaHash,
+            Nome = dto.Nome,
+            FotoPerfil = dto.FotoPerfil,
+            Descricao = dto.Descricao,
+            Telefone = dto.Telefone,
+            Cidade = dto.Cidade,
+            Estado = dto.Estado,
+            Endereco =  dto.Endereco,
+            FormasPagamentos =  dto.FormasPagamentos,
+            MassagensComum = dto.MassagensComum,
+            FotosLocal =  dto.FotosLocal,
+            ServicosPremium =  dto.ServicosPremium
         };
-    }
+    }*/
     #endregion
 }
