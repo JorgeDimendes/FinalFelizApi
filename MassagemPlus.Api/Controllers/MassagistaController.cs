@@ -14,9 +14,11 @@ namespace MassagemPlus.Api.Controllers
     public class MassagistaController : ControllerBase
     {
         private readonly IRepository<Massagista> _RepoMassagista;
-        public MassagistaController(IRepository<Massagista> RepoMassagista)
+        private readonly IMassagistaRepository _Repo;
+        public MassagistaController(IRepository<Massagista> RepoMassagista, IMassagistaRepository repo)
         {
             _RepoMassagista = RepoMassagista;
+            _Repo = repo;
         }
 
         [HttpGet]
@@ -47,8 +49,19 @@ namespace MassagemPlus.Api.Controllers
             return Ok(massagistasDTO);
         }
 
+        [HttpGet("/buscarId{id}")]
+        public async Task<ActionResult<Massagista>> Get(int id)
+        {
+            var massagista = await _Repo.GetById(id);
+            if (massagista == null)
+            {
+                return NotFound("Massagista não encontrado");
+            }
+            return Ok(massagista);
+        }
+
         [HttpPost]
-        public async Task<ActionResult<MassagistaCadastroDTO>> Post([FromBody] MassagistaCadastroDTO massagista)
+        public async Task<ActionResult<Massagista>> Post([FromBody] MassagistaCadastroDTO massagista)
         {
             if (massagista == null)
             {
@@ -64,17 +77,33 @@ namespace MassagemPlus.Api.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult> Put(int id, MassagistaAtualizarDTO massagista)
+        public async Task<ActionResult<MassagistaAtualizarDTO>> Put(int id, MassagistaAtualizarDTO massagista)
         {
             if (id != massagista.Id)
             {
-                return BadRequest("Erro ao localizar massagista");
+                return BadRequest("O ID informado não corresponde ao do objeto enviado.");
             }
+            
+            var verificaMassagista = await _Repo.GetById(id);
+            if (verificaMassagista == null)
+                return NotFound("Massagista não encontrado");
             
             var massagistaDto = massagista.MapearParaModelAtualizacao();
 
             var atualizado = await _RepoMassagista.Put(massagistaDto);
             return Ok(atualizado);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<Massagista>> Delete(int id)
+        {
+            var massagista = await _Repo.GetById(id);
+            if (massagista == null)
+            {
+                return BadRequest("Erro ao localizar massagista");
+            }
+            var massagistaDeletado = _RepoMassagista.Delete(massagista);
+            return Ok(massagistaDeletado);
         }
     }
 }

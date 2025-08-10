@@ -8,7 +8,7 @@ namespace MassagemPlus.Api.Repository;
 public class Repository<T> : IRepository<T> where T : class
 {
     private readonly AppDbContext _context;
-    private readonly DbSet<T> _dbSet;
+    protected readonly DbSet<T> _dbSet;
     public Repository(AppDbContext context)
     {
         _context = context;

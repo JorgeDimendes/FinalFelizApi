@@ -22,16 +22,19 @@ public class AppDbContext : DbContext
         modelBuilder.Entity<Massagista>()
             .HasMany(m => m.ServicosPremium)
             .WithOne(s => s.Massagista)
-            .HasForeignKey(s => s.MassagistaId);
+            .HasForeignKey(s => s.MassagistaId)
+            .OnDelete(DeleteBehavior.Cascade);
         
         modelBuilder.Entity<Massagista>()
             .HasMany(m => m.MassagensComum)
             .WithOne(s => s.Massagista)
-            .HasForeignKey(s => s.MassagistaId);
+            .HasForeignKey(s => s.MassagistaId)
+            .OnDelete(DeleteBehavior.Cascade);
         
         modelBuilder.Entity<Massagista>()
             .HasMany(m => m.FotosLocal)
             .WithOne(s => s.Massagista)
-            .HasForeignKey(s => s.MassagistaId);
+            .HasForeignKey(s => s.MassagistaId)
+            .OnDelete(DeleteBehavior.Cascade);
     }
 }
